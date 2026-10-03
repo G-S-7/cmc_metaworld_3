@@ -1,0 +1,12 @@
+# Consistent Meta-World v2 stack (the experiment uses the -v2 tasks).
+# Do NOT `pip install metaworld` from PyPI: that installs 3.x (v3 tasks, mujoco>=3).
+gymnasium==0.29.1
+mujoco==2.3.7
+metaworld @ git+https://github.com/Farama-Foundation/Metaworld.git@c822f28f582ba1ad49eb5dcf61016566f28003ba
+scipy
+torch
+numpy
+matplotlib
+pillow
+imageio
+imageio-ffmpeg

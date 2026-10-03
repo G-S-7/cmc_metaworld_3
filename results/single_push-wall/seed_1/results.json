@@ -1,0 +1,18 @@
+[
+  {
+    "trained_task_label": "T2",
+    "trained_task_name": "push-wall-v2",
+    "eval_task_label": "T2",
+    "eval_task_name": "push-wall-v2",
+    "use_cmc": false,
+    "seed": 1,
+    "mean_success": 0.23333333333333334,
+    "std_success": 0.4229525846816506,
+    "mean_return": 2580.10405277478,
+    "std_return": 1087.7373180501024,
+    "mean_final_step_success": 0.06666666666666667,
+    "mean_steps_to_success": 70.42857142857143,
+    "n_episodes": 30,
+    "n_unstable_episodes": 0
+  }
+]

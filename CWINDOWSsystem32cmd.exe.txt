@@ -1,0 +1,565 @@
+Microsoft Windows [Version 10.0.26200.9550]
+(c) Microsoft Corporation. All rights reserved.
+
+(base) C:\Users\ACER>
+(base) C:\Users\ACER>
+(base) C:\Users\ACER>conda activate cmc_rl
+
+(cmc_rl) C:\Users\ACER>SET DISTUTILS_USE_SDK=1
+
+(cmc_rl) C:\Users\ACER>SET MSSdk=1
+
+(cmc_rl) C:\Users\ACER>SET "VS_VERSION=15.0"
+
+(cmc_rl) C:\Users\ACER>SET "VS_MAJOR=15"
+
+(cmc_rl) C:\Users\ACER>SET "VS_YEAR=2017"
+
+(cmc_rl) C:\Users\ACER>set "MSYS2_ARG_CONV_EXCL=/AI;/AL;/OUT;/out"
+
+(cmc_rl) C:\Users\ACER>set "MSYS2_ENV_CONV_EXCL=CL"
+
+(cmc_rl) C:\Users\ACER>set "PY_VCRUNTIME_REDIST=\bin\vcruntime140.dll"
+
+(cmc_rl) C:\Users\ACER>set "CXX=cl.exe"
+
+(cmc_rl) C:\Users\ACER>set "CC=cl.exe"
+
+(cmc_rl) C:\Users\ACER>CALL C:\Users\ACER\anaconda3\envs\cmc_rl\etc\conda\activate.d\vs2017_get_vsinstall_dir.bat
+Did not find VSINSTALLDIR
+File Not Found
+Windows SDK version found as: ""
+The system cannot find the path specified.
+Did not find VSINSTALLDIR
+ERROR: Activation script 'C:\Users\ACER\anaconda3\envs\cmc_rl\etc\conda\activate.d\vs2017_get_vsinstall_dir.bat' failed with code 0.
+
+(cmc_rl) C:\Users\ACER>cd C:\Users\ACER\Downloads\cmc_metaworld_project\cmc_metaworld_1
+
+(cmc_rl) C:\Users\ACER\Downloads\cmc_metaworld_project\cmc_metaworld_1>pip install -r requirements.txt
+Collecting metaworld @ git+https://github.com/Farama-Foundation/Metaworld.git@c822f28f582ba1ad49eb5dcf61016566f28003ba (from -r requirements.txt (line 5))
+  Using cached metaworld-2.0.0-py3-none-any.whl
+Requirement already satisfied: gymnasium==0.29.1 in c:\users\acer\anaconda3\envs\cmc_rl\lib\site-packages (from -r requirements.txt (line 3)) (0.29.1)
+Requirement already satisfied: mujoco==2.3.7 in c:\users\acer\anaconda3\envs\cmc_rl\lib\site-packages (from -r requirements.txt (line 4)) (2.3.7)
+Requirement already satisfied: scipy in c:\users\acer\anaconda3\envs\cmc_rl\lib\site-packages (from -r requirements.txt (line 6)) (1.15.3)
+Requirement already satisfied: torch in c:\users\acer\anaconda3\envs\cmc_rl\lib\site-packages (from -r requirements.txt (line 7)) (2.1.2+cu121)
+Requirement already satisfied: numpy in c:\users\acer\anaconda3\envs\cmc_rl\lib\site-packages (from -r requirements.txt (line 8)) (1.26.4)
+Requirement already satisfied: matplotlib in c:\users\acer\anaconda3\envs\cmc_rl\lib\site-packages (from -r requirements.txt (line 9)) (3.10.9)
+Requirement already satisfied: pillow in c:\users\acer\anaconda3\envs\cmc_rl\lib\site-packages (from -r requirements.txt (line 10)) (11.1.0)
+Requirement already satisfied: imageio in c:\users\acer\anaconda3\envs\cmc_rl\lib\site-packages (from -r requirements.txt (line 11)) (2.38.0)
+Requirement already satisfied: imageio-ffmpeg in c:\users\acer\anaconda3\envs\cmc_rl\lib\site-packages (from -r requirements.txt (line 12)) (0.6.0)
+Requirement already satisfied: absl-py in c:\users\acer\anaconda3\envs\cmc_rl\lib\site-packages (from mujoco==2.3.7->-r requirements.txt (line 4)) (2.5.0)
+Requirement already satisfied: glfw in c:\users\acer\anaconda3\envs\cmc_rl\lib\site-packages (from mujoco==2.3.7->-r requirements.txt (line 4)) (2.10.2)
+Requirement already satisfied: pyopengl in c:\users\acer\anaconda3\envs\cmc_rl\lib\site-packages (from mujoco==2.3.7->-r requirements.txt (line 4)) (3.1.10)
+Requirement already satisfied: cloudpickle>=1.2.0 in c:\users\acer\anaconda3\envs\cmc_rl\lib\site-packages (from gymnasium==0.29.1->-r requirements.txt (line 3)) (3.1.2)
+Requirement already satisfied: typing-extensions>=4.3.0 in c:\users\acer\anaconda3\envs\cmc_rl\lib\site-packages (from gymnasium==0.29.1->-r requirements.txt (line 3)) (4.16.0)
+Requirement already satisfied: farama-notifications>=0.0.1 in c:\users\acer\anaconda3\envs\cmc_rl\lib\site-packages (from gymnasium==0.29.1->-r requirements.txt (line 3)) (0.0.6)
+Requirement already satisfied: filelock in c:\users\acer\anaconda3\envs\cmc_rl\lib\site-packages (from torch->-r requirements.txt (line 7)) (4.0.6)
+Requirement already satisfied: sympy in c:\users\acer\anaconda3\envs\cmc_rl\lib\site-packages (from torch->-r requirements.txt (line 7)) (1.14.0)
+Requirement already satisfied: networkx in c:\users\acer\anaconda3\envs\cmc_rl\lib\site-packages (from torch->-r requirements.txt (line 7)) (3.4.2)
+Requirement already satisfied: jinja2 in c:\users\acer\anaconda3\envs\cmc_rl\lib\site-packages (from torch->-r requirements.txt (line 7)) (3.1.6)
+Requirement already satisfied: fsspec in c:\users\acer\anaconda3\envs\cmc_rl\lib\site-packages (from torch->-r requirements.txt (line 7)) (2026.9.0)
+Requirement already satisfied: contourpy>=1.0.1 in c:\users\acer\anaconda3\envs\cmc_rl\lib\site-packages (from matplotlib->-r requirements.txt (line 9)) (1.3.2)
+Requirement already satisfied: cycler>=0.10 in c:\users\acer\anaconda3\envs\cmc_rl\lib\site-packages (from matplotlib->-r requirements.txt (line 9)) (0.12.1)
+Requirement already satisfied: fonttools>=4.22.0 in c:\users\acer\anaconda3\envs\cmc_rl\lib\site-packages (from matplotlib->-r requirements.txt (line 9)) (4.65.0)
+Requirement already satisfied: kiwisolver>=1.3.1 in c:\users\acer\anaconda3\envs\cmc_rl\lib\site-packages (from matplotlib->-r requirements.txt (line 9)) (1.5.1)
+Requirement already satisfied: packaging>=20.0 in c:\users\acer\anaconda3\envs\cmc_rl\lib\site-packages (from matplotlib->-r requirements.txt (line 9)) (26.3)
+Requirement already satisfied: pyparsing>=3 in c:\users\acer\anaconda3\envs\cmc_rl\lib\site-packages (from matplotlib->-r requirements.txt (line 9)) (3.3.3)
+Requirement already satisfied: python-dateutil>=2.7 in c:\users\acer\anaconda3\envs\cmc_rl\lib\site-packages (from matplotlib->-r requirements.txt (line 9)) (2.9.0.post0)
+Requirement already satisfied: six>=1.5 in c:\users\acer\anaconda3\envs\cmc_rl\lib\site-packages (from python-dateutil>=2.7->matplotlib->-r requirements.txt (line 9)) (1.17.0)
+Requirement already satisfied: MarkupSafe>=2.0 in c:\users\acer\anaconda3\envs\cmc_rl\lib\site-packages (from jinja2->torch->-r requirements.txt (line 7)) (3.0.3)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in c:\users\acer\anaconda3\envs\cmc_rl\lib\site-packages (from sympy->torch->-r requirements.txt (line 7)) (1.3.0)
+
+(cmc_rl) C:\Users\ACER\Downloads\cmc_metaworld_project\cmc_metaworld_1>python sanity_check.py --env --render
+[Part A] Logic checks (fake environment)
+usage: sanity_check.py [-h]
+                       [--tasks {push-v2,push-wall-v2,shelf-place-v2} [{push-v2,push-wall-v2,shelf-place-v2} ...]]
+                       [--goal-mode {random,fixed}] [--steps-per-task STEPS_PER_TASK] [--warmup WARMUP]
+                       [--batch-size BATCH_SIZE] [--gamma GAMMA] [--replay-size REPLAY_SIZE]
+                       [--cmc-memory-size CMC_MEMORY_SIZE] [--cmc-candidates CMC_CANDIDATES]
+                       [--cmc-actor-lambda CMC_ACTOR_LAMBDA] [--cmc-critic-lambda CMC_CRITIC_LAMBDA]
+                       [--memory-selection {priority,uniform}] [--recent-frac RECENT_FRAC] [--reset-alpha-per-task]
+                       [--eval-episodes EVAL_EPISODES] [--eval-every EVAL_EVERY] [--curve-episodes CURVE_EPISODES]
+                       [--learned-threshold LEARNED_THRESHOLD] [--log-every LOG_EVERY] [--seed SEED] [--output OUTPUT]
+                       [--tag TAG] [--no-cmc] [--smoke-test]
+sanity_check.py: error: --tasks must follow the order ['push-v2', 'push-wall-v2', 'shelf-place-v2']
+usage: sanity_check.py [-h]
+                       [--tasks {push-v2,push-wall-v2,shelf-place-v2} [{push-v2,push-wall-v2,shelf-place-v2} ...]]
+                       [--goal-mode {random,fixed}] [--steps-per-task STEPS_PER_TASK] [--warmup WARMUP]
+                       [--batch-size BATCH_SIZE] [--gamma GAMMA] [--replay-size REPLAY_SIZE]
+                       [--cmc-memory-size CMC_MEMORY_SIZE] [--cmc-candidates CMC_CANDIDATES]
+                       [--cmc-actor-lambda CMC_ACTOR_LAMBDA] [--cmc-critic-lambda CMC_CRITIC_LAMBDA]
+                       [--memory-selection {priority,uniform}] [--recent-frac RECENT_FRAC] [--reset-alpha-per-task]
+                       [--eval-episodes EVAL_EPISODES] [--eval-every EVAL_EVERY] [--curve-episodes CURVE_EPISODES]
+                       [--learned-threshold LEARNED_THRESHOLD] [--log-every LOG_EVERY] [--seed SEED] [--output OUTPUT]
+                       [--tag TAG] [--no-cmc] [--smoke-test]
+sanity_check.py: error: argument --tasks: invalid choice: 'hammer-v2' (choose from 'push-v2', 'push-wall-v2', 'shelf-place-v2')
+  PASS  Only the 3 tasks, in order push -> push-wall -> shelf-place
+  PASS  reset_env: same episode seed -> same goal; global RNG untouched
+  PASS  Evaluation episodes are identical for every run seed and both arms
+  PASS  Evaluation: same seeds -> same goals; success counted at ANY step
+  PASS  CMC actor anchor carries gradient and pulls the policy to stored actions
+
+================================================================
+  Stage 2: Task T2 push-wall-v2  (1500 steps, CMC ON)  memory/task={0: 200}
+================================================================
+  >>> curve: T1 succ=0.00  T2 succ=0.00
+  >>> curve: T1 succ=0.00  T2 succ=0.00
+[T2    1500] eps=26 train_ret=   50.0 train_succ=0.00 TD=    3.28 |Q|=   3.7 A=  -4.08 alpha=0.1684 unstable=25 33 steps/s | cmcA=0.0658 cmcC=3.07
+  [CMC] consolidated T2: candidates=443 kept=150 memory/task={0: 150, 1: 150}
+  PASS  Training loop: no timeout stored as terminal, no NaN stored, curves logged
+
+================================================================
+  Stage 3: Task T3 shelf-place-v2  (400 steps, CMC ON)  memory/task={0: 150, 1: 150}
+================================================================
+[T3     400] eps=8 train_ret=   50.0 train_succ=0.00 TD=    1.09 |Q|=   2.1 A=  -2.10 alpha=0.1912 unstable=0 50 steps/s | cmcA=0.1810 cmcC=61.59
+  PASS  Consolidation skipped after the last task (nothing left to protect)
+  PASS  Memory: equal per-task quotas regardless of priority scale
+  PASS  Metrics: forgetting / retention / averages on a known matrix
+  PASS  Output folders: per arm and per seed; single-task gate runs kept apart
+
+[Part B] Real Meta-World environments
+Traceback (most recent call last):
+  File "C:\Users\ACER\Downloads\cmc_metaworld_project\cmc_metaworld_1\sanity_check.py", line 326, in <module>
+    main()
+  File "C:\Users\ACER\Downloads\cmc_metaworld_project\cmc_metaworld_1\sanity_check.py", line 318, in main
+    env_ok = env_checks(a.render) if a.env else True
+  File "C:\Users\ACER\Downloads\cmc_metaworld_project\cmc_metaworld_1\sanity_check.py", line 263, in env_checks
+    rep = rx.environment_report("random")
+  File "C:\Users\ACER\Downloads\cmc_metaworld_project\cmc_metaworld_1\run_experiment.py", line 90, in environment_report
+    _, api = get_env_dict()
+  File "C:\Users\ACER\Downloads\cmc_metaworld_project\cmc_metaworld_1\cmc_rl\tasks.py", line 53, in get_env_dict
+    raise ImportError("Installed metaworld exposes neither v2 nor v3 "
+ImportError: Installed metaworld exposes neither v2 nor v3 goal-observable environments.
+
+(cmc_rl) C:\Users\ACER\Downloads\cmc_metaworld_project\cmc_metaworld_1>python sanity_check.py --env --render
+[Part A] Logic checks (fake environment)
+usage: sanity_check.py [-h]
+                       [--tasks {push-v2,push-wall-v2,shelf-place-v2} [{push-v2,push-wall-v2,shelf-place-v2} ...]]
+                       [--goal-mode {random,fixed}] [--steps-per-task STEPS_PER_TASK] [--warmup WARMUP]
+                       [--batch-size BATCH_SIZE] [--gamma GAMMA] [--replay-size REPLAY_SIZE]
+                       [--cmc-memory-size CMC_MEMORY_SIZE] [--cmc-candidates CMC_CANDIDATES]
+                       [--cmc-actor-lambda CMC_ACTOR_LAMBDA] [--cmc-critic-lambda CMC_CRITIC_LAMBDA]
+                       [--memory-selection {priority,uniform}] [--recent-frac RECENT_FRAC] [--reset-alpha-per-task]
+                       [--eval-episodes EVAL_EPISODES] [--eval-every EVAL_EVERY] [--curve-episodes CURVE_EPISODES]
+                       [--learned-threshold LEARNED_THRESHOLD] [--log-every LOG_EVERY] [--seed SEED] [--output OUTPUT]
+                       [--tag TAG] [--no-cmc] [--smoke-test]
+sanity_check.py: error: --tasks must follow the order ['push-v2', 'push-wall-v2', 'shelf-place-v2']
+usage: sanity_check.py [-h]
+                       [--tasks {push-v2,push-wall-v2,shelf-place-v2} [{push-v2,push-wall-v2,shelf-place-v2} ...]]
+                       [--goal-mode {random,fixed}] [--steps-per-task STEPS_PER_TASK] [--warmup WARMUP]
+                       [--batch-size BATCH_SIZE] [--gamma GAMMA] [--replay-size REPLAY_SIZE]
+                       [--cmc-memory-size CMC_MEMORY_SIZE] [--cmc-candidates CMC_CANDIDATES]
+                       [--cmc-actor-lambda CMC_ACTOR_LAMBDA] [--cmc-critic-lambda CMC_CRITIC_LAMBDA]
+                       [--memory-selection {priority,uniform}] [--recent-frac RECENT_FRAC] [--reset-alpha-per-task]
+                       [--eval-episodes EVAL_EPISODES] [--eval-every EVAL_EVERY] [--curve-episodes CURVE_EPISODES]
+                       [--learned-threshold LEARNED_THRESHOLD] [--log-every LOG_EVERY] [--seed SEED] [--output OUTPUT]
+                       [--tag TAG] [--no-cmc] [--smoke-test]
+sanity_check.py: error: argument --tasks: invalid choice: 'hammer-v2' (choose from 'push-v2', 'push-wall-v2', 'shelf-place-v2')
+  PASS  Only the 3 tasks, in order push -> push-wall -> shelf-place
+  PASS  reset_env: same episode seed -> same goal; global RNG untouched
+  PASS  Evaluation episodes are identical for every run seed and both arms
+  PASS  Evaluation: same seeds -> same goals; success counted at ANY step
+  PASS  CMC actor anchor carries gradient and pulls the policy to stored actions
+
+================================================================
+  Stage 2: Task T2 push-wall-v2  (1500 steps, CMC ON)  memory/task={0: 200}
+================================================================
+  >>> curve: T1 succ=0.00  T2 succ=0.00
+  >>> curve: T1 succ=0.00  T2 succ=0.00
+[T2    1500] eps=26 train_ret=   50.0 train_succ=0.00 TD=    3.28 |Q|=   3.7 A=  -4.08 alpha=0.1684 unstable=25 22 steps/s | cmcA=0.0658 cmcC=3.07
+  [CMC] consolidated T2: candidates=443 kept=150 memory/task={0: 150, 1: 150}
+  PASS  Training loop: no timeout stored as terminal, no NaN stored, curves logged
+
+================================================================
+  Stage 3: Task T3 shelf-place-v2  (400 steps, CMC ON)  memory/task={0: 150, 1: 150}
+================================================================
+[T3     400] eps=8 train_ret=   50.0 train_succ=0.00 TD=    1.09 |Q|=   2.1 A=  -2.10 alpha=0.1912 unstable=0 21 steps/s | cmcA=0.1810 cmcC=61.59
+  PASS  Consolidation skipped after the last task (nothing left to protect)
+  PASS  Memory: equal per-task quotas regardless of priority scale
+  PASS  Metrics: forgetting / retention / averages on a known matrix
+  PASS  Output folders: per arm and per seed; single-task gate runs kept apart
+
+[Part B] Real Meta-World environments
+Environment report:
+  python         3.10.21
+  torch          2.1.2+cu121
+  mujoco         2.3.7
+  metaworld      2.0.0
+  gymnasium      0.29.1
+  metaworld_api  v2
+  push-v2          -> push-v2  dt=0.0125s (80 Hz)  T=500  obs=39 act=4
+  push-wall-v2     -> push-wall-v2  dt=0.0125s (80 Hz)  T=500  obs=39 act=4
+  shelf-place-v2   -> shelf-place-v2  dt=0.0125s (80 Hz)  T=500  obs=39 act=4
+  push-v2          goals reproducible=True fixed-mode=True truncations in 600 steps=1 unstable=0 random-policy reward mean=0.071 frame=(480, 480, 3) ok=True
+  push-wall-v2     goals reproducible=True fixed-mode=True truncations in 600 steps=1 unstable=0 random-policy reward mean=0.041 frame=(480, 480, 3) ok=True
+  shelf-place-v2   goals reproducible=True fixed-mode=True truncations in 600 steps=1 unstable=0 random-policy reward mean=0.000 frame=(480, 480, 3) ok=True
+
+10/10 logic checks passed
+
+(cmc_rl) C:\Users\ACER\Downloads\cmc_metaworld_project\cmc_metaworld_1>python run_experiment.py --smoke-test --no-cmc
+Device: cuda
+
+######################################################################
+  SAC baseline (no CMC)   seed=1   tasks=['push-v2', 'push-wall-v2', 'shelf-place-v2']
+  steps/task=1500  goal_mode=random  eval episodes/task=2
+  output: results\smoke_before_cmc\seed_1
+######################################################################
+Environment report:
+  python         3.10.21
+  torch          2.1.2+cu121
+  mujoco         2.3.7
+  metaworld      2.0.0
+  gymnasium      0.29.1
+  metaworld_api  v2
+  push-v2          -> push-v2  dt=0.0125s (80 Hz)  T=500  obs=39 act=4
+  push-wall-v2     -> push-wall-v2  dt=0.0125s (80 Hz)  T=500  obs=39 act=4
+  shelf-place-v2   -> shelf-place-v2  dt=0.0125s (80 Hz)  T=500  obs=39 act=4
+
+================================================================
+  Stage 1: Task T1 push-v2  (1500 steps, CMC OFF)
+================================================================
+[T1     500] eps=1 train_ret=   31.1 train_succ=0.00 TD=    0.01 |Q|=   0.9 A=  -1.42 alpha=0.1941 unstable=0 91 steps/s
+  >>> curve: T1 succ=0.00
+[T1    1000] eps=2 train_ret=   29.7 train_succ=0.00 TD=    0.00 |Q|=   1.4 A=  -1.92 alpha=0.1801 unstable=0 50 steps/s
+[T1    1500] eps=3 train_ret=   27.0 train_succ=0.00 TD=    0.00 |Q|=   1.9 A=  -2.39 alpha=0.1670 unstable=0 47 steps/s
+
+  --- Evaluation after T1 (2 fixed episodes/task) ---
+    T1 push-v2         [new] success=0.00  return=    28.4  unstable_eps=0
+
+================================================================
+  Stage 2: Task T2 push-wall-v2  (1500 steps, CMC OFF)
+================================================================
+[T2     500] eps=1 train_ret=   17.1 train_succ=0.00 TD=    0.00 |Q|=   2.1 A=  -2.57 alpha=0.1621 unstable=0 50 steps/s
+  >>> curve: T1 succ=0.00  T2 succ=0.00
+[T2    1000] eps=2 train_ret=   26.8 train_succ=0.00 TD=    0.00 |Q|=   2.7 A=  -3.06 alpha=0.1504 unstable=0 32 steps/s
+[T2    1500] eps=3 train_ret=   41.8 train_succ=0.00 TD=    0.10 |Q|=   3.1 A=  -3.46 alpha=0.1395 unstable=0 31 steps/s
+
+  --- Evaluation after T2 (2 fixed episodes/task) ---
+    T1 push-v2         [old] success=0.00  return=    21.9  unstable_eps=0
+    T2 push-wall-v2    [new] success=0.00  return=    22.1  unstable_eps=0
+
+================================================================
+  Stage 3: Task T3 shelf-place-v2  (1500 steps, CMC OFF)
+================================================================
+[T3     500] eps=1 train_ret=    0.0 train_succ=0.00 TD=    0.00 |Q|=   3.2 A=  -3.60 alpha=0.1354 unstable=0 30 steps/s
+  >>> curve: T1 succ=0.00  T2 succ=0.00  T3 succ=0.00
+[T3    1000] eps=2 train_ret=    0.0 train_succ=0.00 TD=    0.00 |Q|=   3.5 A=  -3.86 alpha=0.1256 unstable=0 20 steps/s
+[T3    1500] eps=3 train_ret=    0.0 train_succ=0.00 TD=    0.00 |Q|=   3.9 A=  -4.22 alpha=0.1165 unstable=0 25 steps/s
+
+  --- Evaluation after T3 (2 fixed episodes/task) ---
+    T1 push-v2         [old] success=0.00  return=    22.8  unstable_eps=0
+    T2 push-wall-v2    [old] success=0.00  return=    22.8  unstable_eps=0
+    T3 shelf-place-v2  [new] success=0.00  return=     0.0  unstable_eps=0
+
+================================================================
+  SUMMARY (SAC baseline (no CMC), seed 1) — success rate
+================================================================
+  T1: learned=0.00 | after T2: forgetting=0.00 retention=n/a | after T3: forgetting=0.00 retention=n/a   <-- below 0.8 (not reliably learned)
+  T2: learned=0.00 | after T3: forgetting=0.00 retention=n/a   <-- below 0.8 (not reliably learned)
+  T3: learned=0.00   <-- below 0.8 (not reliably learned)
+  average final success=0.00  average forgetting=n/a
+
+(cmc_rl) C:\Users\ACER\Downloads\cmc_metaworld_project\cmc_metaworld_1>python run_experiment.py --smoke-test
+Device: cuda
+
+######################################################################
+  SAC + CMC   seed=1   tasks=['push-v2', 'push-wall-v2', 'shelf-place-v2']
+  steps/task=1500  goal_mode=random  eval episodes/task=2
+  output: results\smoke_after_cmc\seed_1
+######################################################################
+Environment report:
+  python         3.10.21
+  torch          2.1.2+cu121
+  mujoco         2.3.7
+  metaworld      2.0.0
+  gymnasium      0.29.1
+  metaworld_api  v2
+  push-v2          -> push-v2  dt=0.0125s (80 Hz)  T=500  obs=39 act=4
+  push-wall-v2     -> push-wall-v2  dt=0.0125s (80 Hz)  T=500  obs=39 act=4
+  shelf-place-v2   -> shelf-place-v2  dt=0.0125s (80 Hz)  T=500  obs=39 act=4
+
+================================================================
+  Stage 1: Task T1 push-v2  (1500 steps, CMC ON)  memory/task={}
+================================================================
+[T1     500] eps=1 train_ret=   31.1 train_succ=0.00 TD=    0.01 |Q|=   0.9 A=  -1.42 alpha=0.1941 unstable=0 85 steps/s
+  >>> curve: T1 succ=0.00
+[T1    1000] eps=2 train_ret=   29.7 train_succ=0.00 TD=    0.00 |Q|=   1.4 A=  -1.92 alpha=0.1801 unstable=0 36 steps/s
+[T1    1500] eps=3 train_ret=   27.0 train_succ=0.00 TD=    0.00 |Q|=   1.9 A=  -2.39 alpha=0.1670 unstable=0 39 steps/s
+  [CMC] consolidated T1: candidates=450 kept=300 memory/task={0: 300}
+
+  --- Evaluation after T1 (2 fixed episodes/task) ---
+    T1 push-v2         [new] success=0.00  return=    28.4  unstable_eps=0
+
+================================================================
+  Stage 2: Task T2 push-wall-v2  (1500 steps, CMC ON)  memory/task={0: 300}
+================================================================
+[T2     500] eps=1 train_ret=   16.7 train_succ=0.00 TD=    0.00 |Q|=   2.1 A=  -2.56 alpha=0.1621 unstable=0 81 steps/s | cmcA=0.0000 cmcC=0.00
+  >>> curve: T1 succ=0.00  T2 succ=0.00
+[T2    1000] eps=2 train_ret=   19.1 train_succ=0.00 TD=    0.00 |Q|=   2.6 A=  -3.00 alpha=0.1504 unstable=0 29 steps/s | cmcA=0.0000 cmcC=0.00
+[T2    1500] eps=3 train_ret=   94.0 train_succ=0.00 TD=    0.20 |Q|=   3.3 A=  -3.80 alpha=0.1395 unstable=0 32 steps/s | cmcA=0.0004 cmcC=0.01
+  [CMC] consolidated T2: candidates=450 kept=150 memory/task={0: 150, 1: 150}
+
+  --- Evaluation after T2 (2 fixed episodes/task) ---
+    T1 push-v2         [old] success=0.00  return=    22.9  unstable_eps=0
+    T2 push-wall-v2    [new] success=0.00  return=    23.4  unstable_eps=0
+
+================================================================
+  Stage 3: Task T3 shelf-place-v2  (1500 steps, CMC ON)  memory/task={0: 150, 1: 150}
+================================================================
+[T3     500] eps=1 train_ret=    0.0 train_succ=0.00 TD=    0.01 |Q|=   3.2 A=  -3.54 alpha=0.1354 unstable=0 82 steps/s | cmcA=0.0002 cmcC=0.01
+  >>> curve: T1 succ=0.00  T2 succ=0.00  T3 succ=0.00
+[T3    1000] eps=2 train_ret=    0.0 train_succ=0.00 TD=    0.00 |Q|=   3.7 A=  -4.03 alpha=0.1256 unstable=0 27 steps/s | cmcA=0.0001 cmcC=0.00
+[T3    1500] eps=3 train_ret=    0.0 train_succ=0.00 TD=    0.00 |Q|=   4.0 A=  -4.29 alpha=0.1165 unstable=0 26 steps/s | cmcA=0.0002 cmcC=0.00
+
+  --- Evaluation after T3 (2 fixed episodes/task) ---
+    T1 push-v2         [old] success=0.00  return=    19.0  unstable_eps=0
+    T2 push-wall-v2    [old] success=0.00  return=    20.4  unstable_eps=0
+    T3 shelf-place-v2  [new] success=0.00  return=     0.0  unstable_eps=0
+
+================================================================
+  SUMMARY (SAC + CMC, seed 1) — success rate
+================================================================
+  T1: learned=0.00 | after T2: forgetting=0.00 retention=n/a | after T3: forgetting=0.00 retention=n/a   <-- below 0.8 (not reliably learned)
+  T2: learned=0.00 | after T3: forgetting=0.00 retention=n/a   <-- below 0.8 (not reliably learned)
+  T3: learned=0.00   <-- below 0.8 (not reliably learned)
+  average final success=0.00  average forgetting=n/a
+
+(cmc_rl) C:\Users\ACER\Downloads\cmc_metaworld_project\cmc_metaworld_1>python run_full_experiment.py --gate-only --seeds 1
+
+########################################################################
+  GATE T1 push-v2: SAC alone, 300000 steps
+  $ C:\Users\ACER\anaconda3\envs\cmc_rl\python.exe run_experiment.py --no-cmc --tasks push-v2 --seed 1 --steps-per-task 300000 --goal-mode random --eval-episodes 30 --learned-threshold 0.8 --output results
+########################################################################
+Device: cuda
+
+######################################################################
+  SAC baseline (no CMC)   seed=1   tasks=['push-v2']
+  steps/task=300000  goal_mode=random  eval episodes/task=30
+  output: results\single_push\seed_1
+######################################################################
+Environment report:
+  python         3.10.21
+  torch          2.1.2+cu121
+  mujoco         2.3.7
+  metaworld      2.0.0
+  gymnasium      0.29.1
+  metaworld_api  v2
+  push-v2          -> push-v2  dt=0.0125s (80 Hz)  T=500  obs=39 act=4
+  push-wall-v2     -> push-wall-v2  dt=0.0125s (80 Hz)  T=500  obs=39 act=4
+  shelf-place-v2   -> shelf-place-v2  dt=0.0125s (80 Hz)  T=500  obs=39 act=4
+
+================================================================
+  Stage 1: Task T1 push-v2  (300000 steps, CMC OFF)
+================================================================
+[T1   10000] eps=20 train_ret=   35.2 train_succ=0.00 TD=    0.66 |Q|=   0.0 A=   0.00 alpha=0.2000 unstable=0 161 steps/s
+[T1   20000] eps=40 train_ret=   27.4 train_succ=0.00 TD=    0.04 |Q|=   7.0 A=  -7.35 alpha=0.0448 unstable=0 44 steps/s
+  >>> curve: T1 succ=0.00
+[T1   30000] eps=60 train_ret=   27.8 train_succ=0.00 TD=    2.54 |Q|=   9.2 A= -12.80 alpha=0.0120 unstable=0 41 steps/s
+[T1   40000] eps=80 train_ret=   12.8 train_succ=0.00 TD=    8.24 |Q|=  20.6 A= -18.82 alpha=0.0185 unstable=0 39 steps/s
+[T1   50000] eps=100 train_ret=   13.7 train_succ=0.00 TD=  123.20 |Q|=  35.8 A= -28.02 alpha=0.0299 unstable=0 37 steps/s
+  >>> curve: T1 succ=0.00
+[T1   60000] eps=120 train_ret=   25.2 train_succ=0.00 TD=  175.33 |Q|=  46.5 A= -42.47 alpha=0.0558 unstable=0 35 steps/s
+[T1   70000] eps=140 train_ret=   20.4 train_succ=0.05 TD=  120.85 |Q|=  64.6 A= -79.10 alpha=0.1116 unstable=0 33 steps/s
+  >>> curve: T1 succ=0.00
+[T1   80000] eps=160 train_ret=   13.4 train_succ=0.00 TD=  166.07 |Q|= 112.6 A=-113.60 alpha=0.1559 unstable=0 32 steps/s
+[T1   90000] eps=180 train_ret=   20.0 train_succ=0.00 TD= 2954.12 |Q|= 194.6 A=-252.70 alpha=0.3195 unstable=0 30 steps/s
+[T1  100000] eps=200 train_ret=   20.4 train_succ=0.00 TD=  400.06 |Q|= 264.2 A=-280.99 alpha=0.3847 unstable=0 29 steps/s
+  >>> curve: T1 succ=0.00
+[T1  110000] eps=220 train_ret=   71.5 train_succ=0.05 TD= 3972.04 |Q|= 345.2 A=-398.42 alpha=0.3583 unstable=0 27 steps/s
+[T1  120000] eps=240 train_ret=  137.6 train_succ=0.15 TD= 1272.50 |Q|= 408.5 A=-401.52 alpha=0.3698 unstable=0 26 steps/s
+  >>> curve: T1 succ=0.10
+[T1  130000] eps=260 train_ret=  144.5 train_succ=0.15 TD= 1059.67 |Q|= 477.7 A=-449.83 alpha=0.3324 unstable=0 26 steps/s
+[T1  140000] eps=280 train_ret=   82.3 train_succ=0.10 TD=  719.92 |Q|= 408.8 A=-427.31 alpha=0.2527 unstable=0 26 steps/s
+[T1  150000] eps=300 train_ret=   47.1 train_succ=0.05 TD=  375.78 |Q|= 398.8 A=-399.33 alpha=0.2159 unstable=0 27 steps/s
+  >>> curve: T1 succ=0.00
+[T1  160000] eps=320 train_ret=   32.3 train_succ=0.00 TD=  149.21 |Q|= 365.3 A=-372.75 alpha=0.1679 unstable=0 26 steps/s
+[T1  170000] eps=340 train_ret=   31.0 train_succ=0.00 TD=   80.64 |Q|= 333.1 A=-343.24 alpha=0.1134 unstable=0 26 steps/s
+  >>> curve: T1 succ=0.00
+[T1  180000] eps=360 train_ret=   34.5 train_succ=0.00 TD=   64.55 |Q|= 268.4 A=-283.34 alpha=0.0798 unstable=0 26 steps/s
+[T1  190000] eps=380 train_ret=   39.6 train_succ=0.05 TD=   45.25 |Q|= 241.5 A=-232.11 alpha=0.0740 unstable=0 26 steps/s
+[T1  200000] eps=400 train_ret=   30.7 train_succ=0.00 TD=   38.89 |Q|= 204.7 A=-196.97 alpha=0.0597 unstable=0 27 steps/s
+  >>> curve: T1 succ=0.00
+[T1  210000] eps=420 train_ret=   32.0 train_succ=0.05 TD=   87.04 |Q|= 173.9 A=-174.81 alpha=0.0554 unstable=0 27 steps/s
+[T1  220000] eps=440 train_ret=   32.7 train_succ=0.00 TD=   58.06 |Q|= 145.2 A=-149.57 alpha=0.0474 unstable=0 28 steps/s
+  >>> curve: T1 succ=0.00
+[T1  230000] eps=460 train_ret=   25.4 train_succ=0.00 TD=   63.40 |Q|= 119.4 A=-124.76 alpha=0.0483 unstable=0 28 steps/s
+[T1  240000] eps=480 train_ret=   54.8 train_succ=0.05 TD=   22.49 |Q|=  91.8 A= -91.31 alpha=0.0399 unstable=0 28 steps/s
+[T1  250000] eps=500 train_ret=   50.4 train_succ=0.05 TD=   31.94 |Q|=  80.9 A= -74.44 alpha=0.0327 unstable=0 28 steps/s
+  >>> curve: T1 succ=0.00
+[T1  260000] eps=520 train_ret=   43.0 train_succ=0.05 TD=   13.98 |Q|=  61.0 A= -66.53 alpha=0.0300 unstable=0 28 steps/s
+[T1  270000] eps=540 train_ret=  230.5 train_succ=0.05 TD=    7.86 |Q|=  51.9 A= -49.48 alpha=0.0271 unstable=0 28 steps/s
+  >>> curve: T1 succ=0.00
+[T1  280000] eps=560 train_ret=   37.0 train_succ=0.05 TD=   12.46 |Q|=  42.9 A= -39.71 alpha=0.0221 unstable=0 27 steps/s
+[T1  290000] eps=580 train_ret=   47.7 train_succ=0.05 TD=   12.13 |Q|=  39.3 A= -32.25 alpha=0.0215 unstable=0 27 steps/s
+[T1  300000] eps=600 train_ret=   37.8 train_succ=0.05 TD=   11.02 |Q|=  31.9 A= -31.34 alpha=0.0215 unstable=0 27 steps/s
+
+  --- Evaluation after T1 (30 fixed episodes/task) ---
+    T1 push-v2         [new] success=0.10  return=   154.6  unstable_eps=0
+
+================================================================
+  SUMMARY (SAC baseline (no CMC), seed 1) — success rate
+================================================================
+  T1: learned=0.10   <-- below 0.8 (not reliably learned)
+  average final success=0.10  average forgetting=n/a
+  [GATE T1 push-v2: SAC alone, 300000 steps] OK in 3h08m03s
+
+########################################################################
+  GATE T2 push-wall-v2: SAC alone, 300000 steps
+  $ C:\Users\ACER\anaconda3\envs\cmc_rl\python.exe run_experiment.py --no-cmc --tasks push-wall-v2 --seed 1 --steps-per-task 300000 --goal-mode random --eval-episodes 30 --learned-threshold 0.8 --output results
+########################################################################
+Device: cuda
+
+######################################################################
+  SAC baseline (no CMC)   seed=1   tasks=['push-wall-v2']
+  steps/task=300000  goal_mode=random  eval episodes/task=30
+  output: results\single_push-wall\seed_1
+######################################################################
+Environment report:
+  python         3.10.21
+  torch          2.1.2+cu121
+  mujoco         2.3.7
+  metaworld      2.0.0
+  gymnasium      0.29.1
+  metaworld_api  v2
+  push-v2          -> push-v2  dt=0.0125s (80 Hz)  T=500  obs=39 act=4
+  push-wall-v2     -> push-wall-v2  dt=0.0125s (80 Hz)  T=500  obs=39 act=4
+  shelf-place-v2   -> shelf-place-v2  dt=0.0125s (80 Hz)  T=500  obs=39 act=4
+
+================================================================
+  Stage 1: Task T2 push-wall-v2  (300000 steps, CMC OFF)
+================================================================
+[T2   10000] eps=20 train_ret=   25.4 train_succ=0.00 TD=    0.65 |Q|=   0.0 A=   0.00 alpha=0.2000 unstable=0 221 steps/s
+[T2   20000] eps=40 train_ret=   26.9 train_succ=0.00 TD=    0.01 |Q|=   6.9 A=  -6.88 alpha=0.0446 unstable=0 46 steps/s
+  >>> curve: T2 succ=0.00
+[T2   30000] eps=60 train_ret=   31.6 train_succ=0.00 TD=    0.02 |Q|=   7.5 A=  -7.57 alpha=0.0102 unstable=0 35 steps/s
+[T2   40000] eps=80 train_ret=   52.0 train_succ=0.00 TD=    0.07 |Q|=   8.8 A=  -9.17 alpha=0.0052 unstable=0 33 steps/s
+[T2   50000] eps=100 train_ret=   67.7 train_succ=0.05 TD=    0.09 |Q|=  10.3 A= -10.99 alpha=0.0078 unstable=0 31 steps/s
+  >>> curve: T2 succ=0.00
+[T2   60000] eps=120 train_ret=   97.5 train_succ=0.00 TD=    0.14 |Q|=  12.3 A= -11.33 alpha=0.0078 unstable=0 30 steps/s
+[T2   70000] eps=140 train_ret=   96.3 train_succ=0.00 TD=    0.24 |Q|=  13.4 A= -13.68 alpha=0.0094 unstable=0 29 steps/s
+  >>> curve: T2 succ=0.00
+[T2   80000] eps=160 train_ret=  108.9 train_succ=0.00 TD=    0.19 |Q|=  13.8 A= -13.42 alpha=0.0093 unstable=0 28 steps/s
+[T2   90000] eps=180 train_ret=  162.5 train_succ=0.00 TD=    0.38 |Q|=  14.9 A= -15.63 alpha=0.0105 unstable=0 28 steps/s
+[T2  100000] eps=200 train_ret=  176.7 train_succ=0.00 TD=    0.50 |Q|=  17.3 A= -16.72 alpha=0.0127 unstable=0 28 steps/s
+  >>> curve: T2 succ=0.00
+[T2  110000] eps=220 train_ret=  218.3 train_succ=0.00 TD=    0.42 |Q|=  19.1 A= -18.49 alpha=0.0144 unstable=0 28 steps/s
+[T2  120000] eps=240 train_ret=  275.3 train_succ=0.00 TD=    0.91 |Q|=  21.6 A= -21.21 alpha=0.0158 unstable=0 27 steps/s
+  >>> curve: T2 succ=0.00
+[T2  130000] eps=260 train_ret=  265.1 train_succ=0.00 TD=    0.96 |Q|=  22.7 A= -22.48 alpha=0.0168 unstable=0 27 steps/s
+[T2  140000] eps=280 train_ret=  329.2 train_succ=0.00 TD=    1.10 |Q|=  27.0 A= -26.34 alpha=0.0173 unstable=0 27 steps/s
+[T2  150000] eps=300 train_ret=  328.3 train_succ=0.00 TD=    1.18 |Q|=  31.1 A= -28.88 alpha=0.0174 unstable=0 27 steps/s
+  >>> curve: T2 succ=0.00
+[T2  160000] eps=320 train_ret=  286.3 train_succ=0.00 TD=    1.00 |Q|=  30.4 A= -32.25 alpha=0.0169 unstable=0 27 steps/s
+[T2  170000] eps=340 train_ret=  312.2 train_succ=0.00 TD=    1.27 |Q|=  33.8 A= -33.09 alpha=0.0160 unstable=0 27 steps/s
+  >>> curve: T2 succ=0.00
+[T2  180000] eps=360 train_ret=  386.6 train_succ=0.00 TD=    1.56 |Q|=  37.6 A= -36.69 alpha=0.0174 unstable=0 27 steps/s
+[T2  190000] eps=380 train_ret=  394.6 train_succ=0.00 TD=    1.98 |Q|=  36.9 A= -38.18 alpha=0.0185 unstable=0 27 steps/s
+[T2  200000] eps=400 train_ret=  275.7 train_succ=0.05 TD=    1.78 |Q|=  40.5 A= -36.79 alpha=0.0189 unstable=0 27 steps/s
+  >>> curve: T2 succ=0.00
+[T2  210000] eps=420 train_ret=  376.8 train_succ=0.00 TD=    2.26 |Q|=  43.0 A= -42.21 alpha=0.0178 unstable=0 26 steps/s
+[T2  220000] eps=440 train_ret=  480.9 train_succ=0.10 TD=    2.43 |Q|=  43.9 A= -42.35 alpha=0.0186 unstable=0 26 steps/s
+  >>> curve: T2 succ=0.10
+[T2  230000] eps=460 train_ret=  368.9 train_succ=0.00 TD=    3.10 |Q|=  43.9 A= -46.60 alpha=0.0195 unstable=0 26 steps/s
+[T2  240000] eps=480 train_ret=  331.9 train_succ=0.00 TD=    6.38 |Q|=  46.0 A= -45.10 alpha=0.0209 unstable=0 26 steps/s
+[T2  250000] eps=500 train_ret=  318.7 train_succ=0.00 TD=    3.24 |Q|=  45.6 A= -47.51 alpha=0.0215 unstable=0 26 steps/s
+  >>> curve: T2 succ=0.00
+[T2  260000] eps=520 train_ret=  351.0 train_succ=0.00 TD=    3.01 |Q|=  50.5 A= -50.96 alpha=0.0225 unstable=0 26 steps/s
+[T2  270000] eps=540 train_ret=  422.1 train_succ=0.00 TD=    6.10 |Q|=  49.7 A= -49.47 alpha=0.0199 unstable=0 26 steps/s
+  >>> curve: T2 succ=0.00
+[T2  280000] eps=560 train_ret=  422.1 train_succ=0.05 TD=    4.87 |Q|=  49.7 A= -49.38 alpha=0.0208 unstable=0 26 steps/s
+[T2  290000] eps=580 train_ret=  551.4 train_succ=0.05 TD=    4.06 |Q|=  56.1 A= -53.21 alpha=0.0217 unstable=0 26 steps/s
+[T2  300000] eps=600 train_ret=  469.6 train_succ=0.00 TD=    4.29 |Q|=  56.0 A= -58.82 alpha=0.0237 unstable=0 26 steps/s
+
+  --- Evaluation after T2 (30 fixed episodes/task) ---
+    T2 push-wall-v2    [new] success=0.00  return=   448.1  unstable_eps=0
+
+================================================================
+  SUMMARY (SAC baseline (no CMC), seed 1) — success rate
+================================================================
+  T2: learned=0.00   <-- below 0.8 (not reliably learned)
+  average final success=0.00  average forgetting=n/a
+  [GATE T2 push-wall-v2: SAC alone, 300000 steps] OK in 3h14m51s
+
+########################################################################
+  GATE T3 shelf-place-v2: SAC alone, 300000 steps
+  $ C:\Users\ACER\anaconda3\envs\cmc_rl\python.exe run_experiment.py --no-cmc --tasks shelf-place-v2 --seed 1 --steps-per-task 300000 --goal-mode random --eval-episodes 30 --learned-threshold 0.8 --output results
+########################################################################
+Device: cuda
+
+######################################################################
+  SAC baseline (no CMC)   seed=1   tasks=['shelf-place-v2']
+  steps/task=300000  goal_mode=random  eval episodes/task=30
+  output: results\single_shelf-place\seed_1
+######################################################################
+Environment report:
+  python         3.10.21
+  torch          2.1.2+cu121
+  mujoco         2.3.7
+  metaworld      2.0.0
+  gymnasium      0.29.1
+  metaworld_api  v2
+  push-v2          -> push-v2  dt=0.0125s (80 Hz)  T=500  obs=39 act=4
+  push-wall-v2     -> push-wall-v2  dt=0.0125s (80 Hz)  T=500  obs=39 act=4
+  shelf-place-v2   -> shelf-place-v2  dt=0.0125s (80 Hz)  T=500  obs=39 act=4
+
+================================================================
+  Stage 1: Task T3 shelf-place-v2  (300000 steps, CMC OFF)
+================================================================
+[T3   10000] eps=20 train_ret=    0.0 train_succ=0.00 TD=    0.53 |Q|=   0.0 A=   0.00 alpha=0.2000 unstable=0 124 steps/s
+[T3   20000] eps=40 train_ret=    0.0 train_succ=0.00 TD=    0.00 |Q|=   5.8 A=  -5.93 alpha=0.0446 unstable=0 45 steps/s
+  >>> curve: T3 succ=0.00
+[T3   30000] eps=60 train_ret=    0.0 train_succ=0.00 TD=    0.00 |Q|=   5.8 A=  -5.82 alpha=0.0100 unstable=0 35 steps/s
+[T3   40000] eps=80 train_ret=    0.0 train_succ=0.00 TD=    0.00 |Q|=   4.8 A=  -4.83 alpha=0.0022 unstable=0 32 steps/s
+[T3   50000] eps=100 train_ret=    0.0 train_succ=0.00 TD=    0.00 |Q|=   3.9 A=  -3.86 alpha=0.0005 unstable=0 32 steps/s
+  >>> curve: T3 succ=0.00
+[T3   60000] eps=120 train_ret=    0.0 train_succ=0.00 TD=    0.00 |Q|=   3.1 A=  -3.06 alpha=0.0001 unstable=0 31 steps/s
+[T3   70000] eps=140 train_ret=    0.0 train_succ=0.00 TD=    0.00 |Q|=   2.4 A=  -2.42 alpha=0.0000 unstable=0 30 steps/s
+  >>> curve: T3 succ=0.00
+[T3   80000] eps=160 train_ret=    0.0 train_succ=0.00 TD=    0.00 |Q|=   1.9 A=  -1.90 alpha=0.0000 unstable=0 29 steps/s
+[T3   90000] eps=180 train_ret=    0.0 train_succ=0.00 TD=    0.00 |Q|=   1.5 A=  -1.50 alpha=0.0000 unstable=0 29 steps/s
+[T3  100000] eps=200 train_ret=    0.0 train_succ=0.00 TD=    0.00 |Q|=   1.2 A=  -1.18 alpha=0.0000 unstable=0 28 steps/s
+  >>> curve: T3 succ=0.00
+[T3  110000] eps=220 train_ret=    0.0 train_succ=0.00 TD=    0.00 |Q|=   0.9 A=  -0.93 alpha=0.0000 unstable=0 27 steps/s
+[T3  120000] eps=240 train_ret=    0.0 train_succ=0.00 TD=    0.00 |Q|=   0.7 A=  -0.74 alpha=0.0001 unstable=0 26 steps/s
+  >>> curve: T3 succ=0.00
+[T3  130000] eps=260 train_ret=    0.0 train_succ=0.00 TD=    0.00 |Q|=   0.6 A=  -0.60 alpha=0.0001 unstable=0 26 steps/s
+[T3  140000] eps=280 train_ret=    0.0 train_succ=0.00 TD=    0.00 |Q|=   0.5 A=  -0.49 alpha=0.0001 unstable=0 25 steps/s
+[T3  150000] eps=300 train_ret=    0.0 train_succ=0.00 TD=    0.00 |Q|=   0.4 A=  -0.41 alpha=0.0001 unstable=0 24 steps/s
+  >>> curve: T3 succ=0.00
+[T3  160000] eps=320 train_ret=    0.0 train_succ=0.00 TD=    0.00 |Q|=   0.3 A=  -0.34 alpha=0.0001 unstable=0 25 steps/s
+[T3  170000] eps=340 train_ret=    0.0 train_succ=0.00 TD=    0.00 |Q|=   0.3 A=  -0.27 alpha=0.0000 unstable=0 26 steps/s
+  >>> curve: T3 succ=0.00
+[T3  180000] eps=360 train_ret=    0.0 train_succ=0.00 TD=    0.00 |Q|=   0.2 A=  -0.22 alpha=0.0000 unstable=0 26 steps/s
+[T3  190000] eps=380 train_ret=    0.0 train_succ=0.00 TD=    0.00 |Q|=   0.2 A=  -0.17 alpha=0.0000 unstable=0 27 steps/s
+[T3  200000] eps=400 train_ret=    0.0 train_succ=0.00 TD=    0.00 |Q|=   0.1 A=  -0.13 alpha=0.0000 unstable=0 28 steps/s
+  >>> curve: T3 succ=0.00
+[T3  210000] eps=420 train_ret=    0.0 train_succ=0.00 TD=    0.00 |Q|=   0.1 A=  -0.11 alpha=0.0000 unstable=0 29 steps/s
+[T3  220000] eps=440 train_ret=    0.0 train_succ=0.00 TD=    0.00 |Q|=   0.1 A=  -0.08 alpha=0.0000 unstable=0 29 steps/s
+  >>> curve: T3 succ=0.00
+[T3  230000] eps=460 train_ret=    0.0 train_succ=0.00 TD=    0.00 |Q|=   0.1 A=  -0.07 alpha=0.0000 unstable=0 30 steps/s
+[T3  240000] eps=480 train_ret=    0.0 train_succ=0.00 TD=    0.00 |Q|=   0.1 A=  -0.05 alpha=0.0000 unstable=0 30 steps/s
+[T3  250000] eps=500 train_ret=    0.0 train_succ=0.00 TD=    0.00 |Q|=   0.0 A=  -0.04 alpha=0.0000 unstable=0 31 steps/s
+  >>> curve: T3 succ=0.00
+[T3  260000] eps=520 train_ret=    0.0 train_succ=0.00 TD=    0.00 |Q|=   0.0 A=  -0.03 alpha=0.0000 unstable=0 32 steps/s
+[T3  270000] eps=540 train_ret=    0.0 train_succ=0.00 TD=    0.00 |Q|=   0.0 A=  -0.02 alpha=0.0000 unstable=0 32 steps/s
+  >>> curve: T3 succ=0.00
+[T3  280000] eps=560 train_ret=    0.0 train_succ=0.00 TD=    0.00 |Q|=   0.0 A=  -0.02 alpha=0.0000 unstable=0 32 steps/s
+[T3  290000] eps=580 train_ret=    0.0 train_succ=0.00 TD=    0.00 |Q|=   0.0 A=  -0.01 alpha=0.0000 unstable=0 33 steps/s
+[T3  300000] eps=600 train_ret=    0.0 train_succ=0.00 TD=    0.00 |Q|=   0.0 A=  -0.01 alpha=0.0000 unstable=0 33 steps/s
+
+  --- Evaluation after T3 (30 fixed episodes/task) ---
+    T3 shelf-place-v2  [new] success=0.00  return=     0.0  unstable_eps=0
+
+================================================================
+  SUMMARY (SAC baseline (no CMC), seed 1) — success rate
+================================================================
+  T3: learned=0.00   <-- below 0.8 (not reliably learned)
+  average final success=0.00  average forgetting=n/a
+  [GATE T3 shelf-place-v2: SAC alone, 300000 steps] OK in 2h30m45s
+
+BASE-SAC GATE (success on the fixed evaluation episodes):
+  push-v2          0.10  FAIL
+  push-wall-v2     0.00  FAIL
+  shelf-place-v2   0.00  FAIL
+
+(cmc_rl) C:\Users\ACER\Downloads\cmc_metaworld_project\cmc_metaworld_1>

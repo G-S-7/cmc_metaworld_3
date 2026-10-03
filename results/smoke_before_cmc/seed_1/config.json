@@ -1,0 +1,96 @@
+{
+  "args": {
+    "tasks": [
+      "push-v2",
+      "push-wall-v2",
+      "shelf-place-v2"
+    ],
+    "goal_mode": "random",
+    "steps_per_task": 1500,
+    "warmup": 300,
+    "batch_size": 256,
+    "gamma": 0.99,
+    "replay_size": 0,
+    "cmc_memory_size": 300,
+    "cmc_candidates": 5000,
+    "cmc_actor_lambda": 1.0,
+    "cmc_critic_lambda": 0.25,
+    "memory_selection": "priority",
+    "recent_frac": 0.3,
+    "reset_alpha_per_task": false,
+    "demo_episodes": 0,
+    "demo_noise": 0.1,
+    "demo_ratio": 0.0,
+    "layer_norm": false,
+    "reward_scale": 1.0,
+    "device": "auto",
+    "eval_episodes": 2,
+    "eval_every": 750,
+    "curve_episodes": 2,
+    "learned_threshold": 0.8,
+    "log_every": 500,
+    "seed": 1,
+    "output": "results",
+    "tag": "",
+    "no_cmc": true,
+    "smoke_test": true
+  },
+  "arm": "SAC baseline (no CMC)",
+  "use_cmc": false,
+  "labels": [
+    "T1",
+    "T2",
+    "T3"
+  ],
+  "eval_episode_seeds": {
+    "push-v2": [
+      9000000,
+      9000001
+    ],
+    "push-wall-v2": [
+      9010000,
+      9010001
+    ],
+    "shelf-place-v2": [
+      9020000,
+      9020001
+    ]
+  },
+  "environment": {
+    "python": "3.10.21",
+    "torch": "2.1.2+cu121",
+    "numpy": "1.26.4",
+    "mujoco": "2.3.7",
+    "metaworld": "2.0.0",
+    "gymnasium": "0.29.1",
+    "metaworld_api": "v2",
+    "envs": {
+      "push-v2": {
+        "resolved": "push-v2",
+        "class": "PushV2GoalObservable",
+        "dt": 0.0125,
+        "max_path_length": 500,
+        "obs_dim": 39,
+        "act_dim": 4
+      },
+      "push-wall-v2": {
+        "resolved": "push-wall-v2",
+        "class": "PushWallV2GoalObservable",
+        "dt": 0.0125,
+        "max_path_length": 500,
+        "obs_dim": 39,
+        "act_dim": 4
+      },
+      "shelf-place-v2": {
+        "resolved": "shelf-place-v2",
+        "class": "ShelfPlaceV2GoalObservable",
+        "dt": 0.0125,
+        "max_path_length": 500,
+        "obs_dim": 39,
+        "act_dim": 4
+      }
+    },
+    "warnings": []
+  },
+  "started": "2026-10-03 09:34:05"
+}

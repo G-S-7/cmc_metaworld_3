@@ -1,0 +1,68 @@
+{
+  "arm": "SAC baseline (no CMC)",
+  "seed": 1,
+  "labels": [
+    "T1",
+    "T2",
+    "T3"
+  ],
+  "success": {
+    "new_task": {
+      "T1": 0.0,
+      "T2": 0.0,
+      "T3": 0.0
+    },
+    "final": {
+      "T1": 0.0,
+      "T2": 0.0,
+      "T3": 0.0
+    },
+    "forgetting": {
+      "T1_after_T2": 0.0,
+      "T1_after_T3": 0.0,
+      "T2_after_T3": 0.0
+    },
+    "retention": {
+      "T1_after_T2": NaN,
+      "T1_after_T3": NaN,
+      "T2_after_T3": NaN
+    },
+    "avg_forgetting_final": NaN,
+    "tasks_counted_in_avg_forgetting": [],
+    "avg_final": 0.0
+  },
+  "return": {
+    "new_task": {
+      "T1": 28.441624121743533,
+      "T2": 22.056383940266933,
+      "T3": 0.0
+    },
+    "final": {
+      "T1": 22.791794988779998,
+      "T2": 22.80607685012677,
+      "T3": 0.0
+    },
+    "forgetting": {
+      "T1_after_T2": 6.5229108465677506,
+      "T1_after_T3": 5.649829132963536,
+      "T2_after_T3": -0.7496929098598386
+    },
+    "retention": {
+      "T1_after_T2": 0.7706561756583723,
+      "T1_after_T3": 0.8013534983522879,
+      "T2_after_T3": 1.033989837676482
+    },
+    "avg_forgetting_final": 2.4500681115518486,
+    "tasks_counted_in_avg_forgetting": [
+      "T1",
+      "T2"
+    ],
+    "avg_final": 15.199290612968923
+  },
+  "learned_threshold": 0.8,
+  "task_learned": {
+    "T1": false,
+    "T2": false,
+    "T3": false
+  }
+}

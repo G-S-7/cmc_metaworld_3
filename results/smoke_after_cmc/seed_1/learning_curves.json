@@ -1,0 +1,41 @@
+[
+  {
+    "stage": "T1",
+    "step_in_stage": 750,
+    "global_step": 750,
+    "T1": {
+      "success": 0.0,
+      "return": 13.332154078816195
+    }
+  },
+  {
+    "stage": "T2",
+    "step_in_stage": 750,
+    "global_step": 2250,
+    "T1": {
+      "success": 0.0,
+      "return": 23.153408048165133
+    },
+    "T2": {
+      "success": 0.0,
+      "return": 23.154165239897523
+    }
+  },
+  {
+    "stage": "T3",
+    "step_in_stage": 750,
+    "global_step": 3750,
+    "T1": {
+      "success": 0.0,
+      "return": 19.375315860691302
+    },
+    "T2": {
+      "success": 0.0,
+      "return": 20.13373473088838
+    },
+    "T3": {
+      "success": 0.0,
+      "return": 0.0
+    }
+  }
+]
