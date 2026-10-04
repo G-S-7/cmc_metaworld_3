@@ -1,0 +1,44 @@
+{
+  "seed": 1,
+  "task": "shelf-place-v2",
+  "after_stage": "T3",
+  "left": "before_cmc",
+  "right": "after_cmc",
+  "goal_mode": "random",
+  "camera": "corner2",
+  "fps": 80,
+  "episodes": {
+    "baseline": [
+      {
+        "episode_seed": 9020000,
+        "return": 0.0,
+        "success": false,
+        "first_success_step": -1,
+        "steps": 500
+      },
+      {
+        "episode_seed": 9020001,
+        "return": 0.0,
+        "success": false,
+        "first_success_step": -1,
+        "steps": 500
+      }
+    ],
+    "cmc": [
+      {
+        "episode_seed": 9020000,
+        "return": 0.0,
+        "success": false,
+        "first_success_step": -1,
+        "steps": 500
+      },
+      {
+        "episode_seed": 9020001,
+        "return": 3613.16,
+        "success": true,
+        "first_success_step": 125,
+        "steps": 500
+      }
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "arm": "SAC + CMC",
+  "seed": 1,
+  "labels": [
+    "T2"
+  ],
+  "success": {
+    "new_task": {
+      "T2": 0.9
+    },
+    "final": {
+      "T2": 0.9
+    },
+    "forgetting": {},
+    "retention": {},
+    "avg_forgetting_final": NaN,
+    "tasks_counted_in_avg_forgetting": [],
+    "avg_final": 0.9
+  },
+  "return": {
+    "new_task": {
+      "T2": 4075.7401667812205
+    },
+    "final": {
+      "T2": 4075.7401667812205
+    },
+    "forgetting": {},
+    "retention": {},
+    "avg_forgetting_final": NaN,
+    "tasks_counted_in_avg_forgetting": [],
+    "avg_final": 4075.7401667812205
+  },
+  "learned_threshold": 0.8,
+  "task_learned": {
+    "T2": true
+  }
+}

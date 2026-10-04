@@ -1,0 +1,31 @@
+{
+  "checkpoint": "results\\single_push-wall_dr25\\seed_1\\checkpoints\\stage_T2.pt",
+  "sha256": "14e44aaae1039606",
+  "task": "push-wall-v2",
+  "goal_mode": "random",
+  "camera": "corner2",
+  "fps": 80,
+  "episodes": [
+    {
+      "episode_seed": 9010000,
+      "return": 4506.894245782374,
+      "success": true,
+      "first_success_step": 81,
+      "frames": 501
+    },
+    {
+      "episode_seed": 9010001,
+      "return": 4566.563465632338,
+      "success": true,
+      "first_success_step": 69,
+      "frames": 501
+    },
+    {
+      "episode_seed": 9010002,
+      "return": 4605.338959281772,
+      "success": true,
+      "first_success_step": 81,
+      "frames": 501
+    }
+  ]
+}

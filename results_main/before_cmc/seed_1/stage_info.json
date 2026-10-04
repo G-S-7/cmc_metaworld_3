@@ -1,0 +1,23 @@
+{
+  "T1": {
+    "unstable_transitions": 0,
+    "consolidation": null,
+    "demo_success": 1.0,
+    "train_success_last20": 0.95,
+    "wall_time_s": 8691.69120168686
+  },
+  "T2": {
+    "unstable_transitions": 0,
+    "consolidation": null,
+    "demo_success": 1.0,
+    "train_success_last20": 0.9,
+    "wall_time_s": 6681.142550945282
+  },
+  "T3": {
+    "unstable_transitions": 0,
+    "consolidation": null,
+    "demo_success": 1.0,
+    "train_success_last20": 0.55,
+    "wall_time_s": 5791.263909816742
+  }
+}

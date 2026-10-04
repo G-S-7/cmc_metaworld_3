@@ -1,0 +1,27 @@
+{
+  "run": "before_cmc",
+  "seed": 1,
+  "checkpoint": "results_main\\before_cmc\\seed_1\\checkpoints\\stage_T3.pt",
+  "sha256": "8a762c0e7a2b5fe9",
+  "task": "push-wall-v2",
+  "after_stage": "T3",
+  "goal_mode": "random",
+  "camera": "corner2",
+  "fps": 80,
+  "episodes": [
+    {
+      "episode_seed": 9010000,
+      "return": 33.94,
+      "success": false,
+      "first_success_step": -1,
+      "steps": 500
+    },
+    {
+      "episode_seed": 9010001,
+      "return": 39.46,
+      "success": false,
+      "first_success_step": -1,
+      "steps": 500
+    }
+  ]
+}

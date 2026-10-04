@@ -1,0 +1,9 @@
+{
+  "T1": {
+    "unstable_transitions": 0,
+    "consolidation": null,
+    "demo_success": 1.0,
+    "train_success_last20": 0.95,
+    "wall_time_s": 12155.939573526382
+  }
+}

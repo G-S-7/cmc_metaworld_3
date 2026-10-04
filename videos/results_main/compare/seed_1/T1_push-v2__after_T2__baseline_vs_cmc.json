@@ -1,0 +1,44 @@
+{
+  "seed": 1,
+  "task": "push-v2",
+  "after_stage": "T2",
+  "left": "before_cmc",
+  "right": "after_cmc",
+  "goal_mode": "random",
+  "camera": "corner2",
+  "fps": 80,
+  "episodes": {
+    "baseline": [
+      {
+        "episode_seed": 9000000,
+        "return": 82.25,
+        "success": false,
+        "first_success_step": -1,
+        "steps": 500
+      },
+      {
+        "episode_seed": 9000001,
+        "return": 29.65,
+        "success": false,
+        "first_success_step": -1,
+        "steps": 500
+      }
+    ],
+    "cmc": [
+      {
+        "episode_seed": 9000000,
+        "return": 3649.35,
+        "success": true,
+        "first_success_step": 89,
+        "steps": 500
+      },
+      {
+        "episode_seed": 9000001,
+        "return": 85.1,
+        "success": false,
+        "first_success_step": -1,
+        "steps": 500
+      }
+    ]
+  }
+}

@@ -70,7 +70,7 @@ or by hand, per seed:
 python run_experiment.py --no-cmc --seed 1    # A) results/before_cmc/seed_1/
 python run_experiment.py          --seed 1    # B) results/after_cmc/seed_1/
 python compare_results.py --results results --out-dir results/comparison
-python render_all_videos.py --seed 1
+python render_all_videos.py --results results --seed 1
 ```
 
 After every stage, **all tasks learned so far** are evaluated on the same 30 fixed
@@ -98,11 +98,13 @@ results/
   comparison/
       report.md  metrics.json  matrix_success.png  stage_success.png
       forgetting.png  learning_curves.png
-videos/<arm>/seed_k/
-      T1_push-v2__after_T1.mp4   task right after it was learned
-      T1_push-v2__after_T3.mp4   same task after all training (shows retention)
+videos/<results folder>/
+  <run>/seed_k/T1_push-v2__after_T2.mp4      every task learned so far, after every stage
+  compare/seed_k/T1_push-v2__after_T3__baseline_vs_cmc.mp4
+                                             baseline (left) vs CMC (right), same start state
+  index.md                                   every video with its success count
 ```
-Each video has a `.json` with per-episode success and a `.start.png` / `.end.png`.
+Each video has a `.json` with per-episode success (`render_agent.py` also saves start/end PNGs).
 Videos are 80 fps (Meta-World's control rate), from the `corner2` camera, on the
 same episodes used for evaluation, and the checkpoint weights are verified on load.
 
@@ -119,6 +121,3 @@ same episodes used for evaluation, and the checkpoint weights are verified on lo
 | `cmc_rl/tasks.py` | the 3 tasks, reproducible resets, camera |
 | `cmc_rl/networks.py`, `replay.py`, `cmc.py`, `metrics.py` | SAC, buffers, CMC, metrics |
 | `cmc_rl/experts.py` | Meta-World's scripted expert policies for the 3 tasks |
-
-Report what the data shows. If a task is not reliably learned, say so — its
-forgetting numbers are not meaningful.

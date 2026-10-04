@@ -1,0 +1,31 @@
+{
+  "checkpoint": "results\\single_shelf-place_dr2\\seed_1\\checkpoints\\stage_T3.pt",
+  "sha256": "44868d05790e8538",
+  "task": "shelf-place-v2",
+  "goal_mode": "random",
+  "camera": "corner2",
+  "fps": 80,
+  "episodes": [
+    {
+      "episode_seed": 9020000,
+      "return": 0.0,
+      "success": false,
+      "first_success_step": -1,
+      "frames": 501
+    },
+    {
+      "episode_seed": 9020001,
+      "return": 449.09900884443766,
+      "success": true,
+      "first_success_step": 108,
+      "frames": 501
+    },
+    {
+      "episode_seed": 9020002,
+      "return": 3708.742628085478,
+      "success": true,
+      "first_success_step": 153,
+      "frames": 501
+    }
+  ]
+}
